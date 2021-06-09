@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作业提交系统-用户登录</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <header>
+    <h2>
+      <a href="/">
+        <img src="../images/tupian1.png" alt="">
+      </a>
+    </h2>
+  </header>
+  <nav>
+    <div>
+      <ul>
+        <li><a href="javascript:;">上传作业</a></li>
+        <li><a href="javascript:;">查看作业</a></li>
+        <li><a href="javascript:;">作业公告</a></li>
+        <li><a href="javascript:;">关于系统</a></li>
+        <li><a href="javascript:;">登录</a></li>
+        <li><a href="javascript:;">修改密码</a></li>
+        <li><a href="javascript:;">注册</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <div class="form1">
+      <form action="/api/profile" method="post" id="form1" enctype="multipart/form-data">
+        <div>
+          <label for="avatar">提交作业：</label>
+          <input type="file" name="avatar" required>
+        </div>
+        <div>
+          <input type="submit" value="提交">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/index.js"></script>
+</body>
+</html>
